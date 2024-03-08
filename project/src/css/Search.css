@@ -1,0 +1,29 @@
+.search_main{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    min-height: 60%;
+}
+.search_heading{
+    text-align: center;
+}
+.search_box{
+    width: 400px;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    height: 30px;
+    align-self: center;
+    text-align: center;
+    
+}
+#img{
+    height: 25px;
+    width: 40px;
+}
+.search_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

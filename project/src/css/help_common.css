@@ -1,0 +1,35 @@
+.collapsible {
+    background-color: #ffff;
+    color: black;
+    cursor: pointer;
+    padding: 18px 0 5px 0;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    font-size: large;
+    font-weight: 500;
+
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ .acitve .collapsible:hover {
+    background-color: #b8b0b0;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding-left: 18px;
+    display: none;
+    overflow: hidden;
+    /* background-color: #f0f0f0; */
+    color: black;
+    font-weight: 200;
+    font-family:sans-serif;
+    text-wrap:wrap;
+    text-align-last:left;
+  }
+  .faq_main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

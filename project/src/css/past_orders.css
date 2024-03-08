@@ -1,0 +1,67 @@
+.main_pastorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 55px;
+}
+.main_pastorder h3{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: orangered;
+    margin-bottom: -20px;
+}
+.main_container_pastorders{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 208px;
+    border: 1px dotted black;
+}
+.seg1_pastorders{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dotted black;
+    gap: 60px;
+    height: 115px;
+    padding-top: 15px;
+    
+}
+.seg2_pastorders{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 118px;
+}
+.sec1_seg1_img img{
+    width: 10rem;
+    height: 6.5rem;
+    padding-left: 10px;
+}
+.sec2_seg1_resname{
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-weight: 700;
+    font-size: 18px;
+}
+.sec2_seg1_cat{
+    font-size: 15px;
+    font-weight: 500;
+}
+.sec3_seg1_time{
+    margin-left: 280px;
+}
+
+.sec1_seg2 button{
+    color: black;
+    background-color: rgb(238, 113, 67);
+    border-radius: 5px;
+    padding-top: 5px;
+}
+#username_history{
+    color: orangered;
+    font-weight: 500;
+    font-size: 1.5rem;
+}

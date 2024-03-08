@@ -1,0 +1,593 @@
+{
+  "user": [
+    {
+      "id": "d5f4",
+      "username": "Anish Raj",
+      "password": "asdf",
+      "mobile": "34259807",
+      "email": "ansih@yahoo.com",
+      "usertype": "user"
+    },
+    {
+      "id": "6af8",
+      "username": "singhgaurav308",
+      "fullname": "Gaurav Singh",
+      "password": "12345",
+      "mobile": "6387123344",
+      "email": "singh123@gmail.com",
+      "usertype": "owner"
+    },
+    {
+      "id": "3349",
+      "fullname": "Prashuk Jain",
+      "lastname": "Jain",
+      "username": "jain@prashuk",
+      "password": "12345",
+      "email": "prashuk_buisness@gmail.com",
+      "mobile": "9899123466",
+      "usertype": "owner"
+    },
+    {
+      "id": "b37f",
+      "fullname": "Ankit",
+      "lastname": "Singh",
+      "username": "singh@ankit",
+      "password": "1",
+      "email": "ankit_res@gmail.com",
+      "mobile": "9878594873",
+      "usertype": "owner"
+    },
+    {
+      "id": "9ea8",
+      "fullname": "Prashuk",
+      "lastname": "Jain",
+      "username": "jain@prashuk",
+      "password": "1",
+      "email": "prashuk_buisness@gmail.com",
+      "mobile": "8492579420",
+      "usertype": "owner"
+    },
+    {
+      "id": "0d61",
+      "fullname": "Priyansh",
+      "lastname": "Garg",
+      "username": "garg@123",
+      "password": "123",
+      "email": "garg_priyansh@yahoo.com",
+      "mobile": "7898494944",
+      "usertype": "owner"
+    },
+    {
+      "id": "5c21",
+      "fullname": "Ankit",
+      "lastname": "Singh",
+      "username": "singh@ankit",
+      "password": "1",
+      "email": "singhankit@gmail.com",
+      "mobile": "8492579420",
+      "usertype": "owner"
+    },
+    {
+      "id": "df2d",
+      "fullname": "Ashutosh",
+      "lastname": "Singh",
+      "username": "singh@ashutosh",
+      "password": "1",
+      "email": "ashutosh@gmail.com",
+      "mobile": "7768566425",
+      "usertype": "owner"
+    },
+    {
+      "id": "3acb",
+      "fullname": "Dilip",
+      "lastname": "Patel",
+      "username": "patel@dilip",
+      "password": "1"
+    },
+    {
+      "id": "5ddf",
+      "fullname": "Dilip",
+      "lastname": "Patel",
+      "username": "dilip123",
+      "password": "1",
+      "email": "dilip@rediff.com",
+      "mobile": "9878684626",
+      "usertype": "owner"
+    },
+    {
+      "id": "42ad",
+      "fullname": "Hariom",
+      "lastname": "Pandey",
+      "username": "pandey123",
+      "password": "1",
+      "email": "pandey@gmail.com",
+      "mobile": "9487648392",
+      "usertype": "owner"
+    },
+    {
+      "id": "6374",
+      "fullname": "Gaurav",
+      "lastname": "Singh",
+      "username": "singh@gaurav",
+      "password": "gaurav",
+      "email": "gauravsinghaw123@gmail.com",
+      "mobile": "6387124344",
+      "usertype": "user"
+    },
+    {
+      "id": "c980",
+      "fullname": "Jagan",
+      "lastname": "Kavanaru",
+      "username": "jagan@123",
+      "password": "$2a$10$tu6/1VLQW9m3/mMQemlqFOUMYha8Jgk7JuG1SAS2k01ho3gLINOPS",
+      "email": "jagan@gmail.com",
+      "mobile": "8492579420",
+      "usertype": "user"
+    },
+    {
+      "id": "e890",
+      "fullname": "Yash",
+      "lastname": "Mishra",
+      "username": "mishra@123",
+      "password": "12345",
+      "email": "mishra@gmail.com",
+      "mobile": "8492579420",
+      "usertype": "owner"
+    },
+    {
+      "id": "c196"
+    },
+    {
+      "id": "0659"
+    },
+    {
+      "id": "a81f",
+      "fullname": "Gaurav Singh",
+      "username": "opsaufpa",
+      "password": "asdfljpa",
+      "email": "apsdfpa@gamil.com",
+      "mobile": "aspdfou",
+      "address": "asdlfhasad",
+      "usertype": "user"
+    }
+  ],
+  "res_detail": [
+    {
+      "id": "b49d",
+      "res_name": "The Indian Restaurant",
+      "address": "Gachibowli Hyderabad",
+      "pincode": "50001",
+      "opening_time": "07:10",
+      "closing_time": "22:10",
+      "owner_name": "Gaurav Singh",
+      "owner_mobile": "8957817676",
+      "tag_line": "Best Food",
+      "username": "singhgaurav308"
+    },
+    {
+      "id": "936d",
+      "res_name": "The Jain Food Corner",
+      "address": "Secudarabad",
+      "pincode": "50302",
+      "opening_time": "10:00",
+      "closing_time": "22:00",
+      "username": "jain@prashuk",
+      "owner_mobile": "8957817676",
+      "tag_line": "Best Veg food here"
+    },
+    {
+      "id": "2141",
+      "res_name": "Great Punjabi Tadka",
+      "address": "Raidurg Hyderabad",
+      "pincode": "50002",
+      "opening_time": "10:00",
+      "closing_time": "22:00",
+      "username": "garg@123",
+      "owner_mobile": "7845768749",
+      "tag_line": "Best Punjabi flavour in Hyderabad"
+    },
+    {
+      "id": "4102",
+      "res_name": "The Expecto Cafe",
+      "address": "Hitech City Hyderabad",
+      "pincode": "50002",
+      "opening_time": "12:00",
+      "closing_time": "06:00",
+      "username": "singh@ankit",
+      "owner_mobile": "7845768749",
+      "tag_line": "Exotic dishes available"
+    },
+    {
+      "id": "4fe0",
+      "res_name": "The West  Meridian Cafe",
+      "address": "Madapur Hyderabad",
+      "pincode": "50002",
+      "opening_time": "08:00",
+      "closing_time": "22:00",
+      "username": "dilip123",
+      "owner_mobile": "988366452",
+      "tag_line": "Best European Cuisines"
+    },
+    {
+      "id": "51fa",
+      "res_name": "The Hyderabad Cafe",
+      "address": "Nanakaramguda Hyderabad",
+      "pincode": "500032",
+      "opening_time": "10:00",
+      "closing_time": "04:00",
+      "username": "pandey123",
+      "owner_mobile": "7845768749",
+      "tag_line": "Hyderabadi Cuisines Paradise"
+    },
+    {
+      "id": "39bc",
+      "res_name": "Silver Spoon Hotel",
+      "address": "Raidurg Hyderabad",
+      "pincode": "50001",
+      "opening_time": "06:10",
+      "closing_time": "22:00",
+      "username": "mishra@123",
+      "owner_mobile": "7845768749",
+      "tag_line": "Fast Food Corner"
+    },
+    {
+      "id": "e66d",
+      "res_name": "Hyb cafe",
+      "address": "Crossing Repulic G.Noida",
+      "pincode": "50001",
+      "opening_time": "10:10",
+      "closing_time": "22:10",
+      "username": "dilip@123",
+      "owner_mobile": "8957817676",
+      "tag_line": "Best Punjabi flavour in Hyderabad"
+    },
+    {
+      "id": "bd47"
+    }
+  ],
+  "menu": [
+    {
+      "id": "4083",
+      "menu_category": "south_India",
+      "dish_name": "dosa",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "fb76",
+      "menu_category": "north_Indian",
+      "dish_name": "paneer_butter_masala",
+      "food_preferance": "veg",
+      "dish_price": "220",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "d59d",
+      "menu_category": "fast_food",
+      "dish_name": "burger",
+      "food_preferance": "non_veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "ad7e",
+      "menu_category": "south_India",
+      "dish_name": "idli",
+      "food_preferance": "veg",
+      "dish_price": "40",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "df91",
+      "menu_category": "south_India",
+      "dish_name": "uttapam",
+      "food_preferance": "veg",
+      "dish_price": "70",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "a19f",
+      "menu_category": "fast_food",
+      "dish_name": "pizza",
+      "food_preferance": "non_veg",
+      "dish_price": "760",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "5a6f",
+      "menu_category": "fast_food",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "3b16",
+      "menu_category": "north_Indian",
+      "dish_name": "veg_biryani",
+      "food_preferance": "veg",
+      "dish_price": "220",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "b7a9",
+      "menu_category": "dessert",
+      "dish_name": "kaju_katli",
+      "food_preferance": "veg",
+      "dish_price": "3800",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "c675",
+      "menu_category": "south_India",
+      "dish_name": "uttapam",
+      "food_preferance": "veg",
+      "dish_price": "129",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "e22e",
+      "menu_category": "beverages_drinks",
+      "dish_name": "cold_drink",
+      "food_preferance": "veg",
+      "dish_price": "25",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "b9cb",
+      "dish_name": "butter_chicken",
+      "food_preferance": "veg",
+      "dish_price": "340",
+      "res_name": "Great Punjabi Tadka"
+    },
+    {
+      "id": "efa6",
+      "dish_name": "paneer_butter_masala",
+      "food_preferance": "veg",
+      "dish_price": "150",
+      "res_name": "Great Punjabi Tadka"
+    },
+    {
+      "id": "0090",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "Great Punjabi Tadka"
+    },
+    {
+      "id": "e273",
+      "menu_category": "fast_food",
+      "dish_name": "pizza",
+      "food_preferance": "non_veg",
+      "dish_price": "500",
+      "res_name": "The Expecto Cafe"
+    },
+    {
+      "id": "7872",
+      "menu_category": "fast_food",
+      "dish_name": "burger",
+      "food_preferance": "veg",
+      "dish_price": "95",
+      "res_name": "The Expecto Cafe"
+    },
+    {
+      "id": "9f32",
+      "menu_category": "biryani",
+      "dish_name": "chicken_biryani",
+      "food_preferance": "non_veg",
+      "dish_price": "420",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "d951",
+      "menu_category": "fast_food",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "7ba3",
+      "menu_category": "beverages_drinks",
+      "dish_name": "cold_drink",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "5217",
+      "menu_category": "biryani",
+      "dish_name": "veg_biryani",
+      "food_preferance": "veg",
+      "dish_price": "500",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "daa1",
+      "menu_category": "fast_food",
+      "dish_name": "pizza",
+      "food_preferance": "non_veg",
+      "dish_price": "700",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "02b9",
+      "menu_category": "biryani",
+      "dish_name": "veg_biryani",
+      "food_preferance": "veg",
+      "dish_price": "320",
+      "res_name": "The Expecto Cafe"
+    },
+    {
+      "id": "d721",
+      "menu_category": "biryani",
+      "dish_name": "chicken_biryani",
+      "food_preferance": "non_veg",
+      "dish_price": "440",
+      "res_name": "The Expecto Cafe"
+    },
+    {
+      "id": "daec",
+      "menu_category": "fast_food",
+      "dish_name": "pizza",
+      "food_preferance": "non_veg",
+      "dish_price": "680",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "2f0c",
+      "menu_category": "fast_food",
+      "dish_name": "uttapam",
+      "food_preferance": "veg",
+      "dish_price": "40",
+      "res_name": "Silver Spoon Hotel"
+    },
+    {
+      "id": "5637",
+      "menu_category": "chinese",
+      "dish_name": "chicken_noodles",
+      "food_preferance": "non_veg",
+      "dish_price": "220",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "61db",
+      "menu_category": "chinese",
+      "dish_name": "noodles_manchurian",
+      "food_preferance": "veg",
+      "dish_price": "160",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "2fc8",
+      "menu_category": "chinese",
+      "dish_name": "chicken_noodles",
+      "food_preferance": "non_veg",
+      "dish_price": "220",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "66ea",
+      "menu_category": "chinese",
+      "dish_name": "noodles",
+      "food_preferance": "veg",
+      "dish_price": "200",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "9436",
+      "menu_category": "chinese",
+      "dish_name": "noodles",
+      "food_preferance": "veg",
+      "dish_price": "200",
+      "res_name": "The Jain Food Corner"
+    }
+  ],
+  "orders": [
+    {
+      "id": "4083",
+      "menu_category": "south_India",
+      "dish_name": "dosa",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "4083",
+      "menu_category": "south_India",
+      "dish_name": "dosa",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "9f32",
+      "menu_category": "biryani",
+      "dish_name": "chicken_biryani",
+      "food_preferance": "non_veg",
+      "dish_price": "420",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "daec",
+      "menu_category": "fast_food",
+      "dish_name": "pizza",
+      "food_preferance": "non_veg",
+      "dish_price": "680",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "9f32",
+      "menu_category": "biryani",
+      "dish_name": "chicken_biryani",
+      "food_preferance": "non_veg",
+      "dish_price": "420",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "5a6f",
+      "menu_category": "fast_food",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "3b16",
+      "menu_category": "north_Indian",
+      "dish_name": "veg_biryani",
+      "food_preferance": "veg",
+      "dish_price": "220",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "5a6f",
+      "menu_category": "fast_food",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "d59d",
+      "menu_category": "fast_food",
+      "dish_name": "burger",
+      "food_preferance": "non_veg",
+      "dish_price": "120",
+      "res_name": "The Indian Restaurant"
+    },
+    {
+      "id": "5a6f",
+      "menu_category": "fast_food",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "b7a9",
+      "menu_category": "dessert",
+      "dish_name": "kaju_katli",
+      "food_preferance": "veg",
+      "dish_price": "3800",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "5a6f",
+      "menu_category": "fast_food",
+      "dish_name": "chole_bhature",
+      "food_preferance": "veg",
+      "dish_price": "120",
+      "res_name": "The Jain Food Corner"
+    },
+    {
+      "id": "3b16",
+      "menu_category": "north_Indian",
+      "dish_name": "veg_biryani",
+      "food_preferance": "veg",
+      "dish_price": "220",
+      "res_name": "The Jain Food Corner"
+    }
+  ]
+}

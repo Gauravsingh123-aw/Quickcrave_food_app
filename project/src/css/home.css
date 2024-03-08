@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text_visual_add {
+  background-color:  #151719;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 282px;
+  width: 600px;
+}
+
+
+.banner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+    outline: none;
+    border: none;
+
+}
+.banner_menu{
+    /* mix-blend-mode:darken; */
+    width: 140px;
+    
+    
+}
+.bannermenu1{
+    padding-left:20px;
+}
+.bannermenu2{
+    padding-right:20px;
+}
+.banner_menu:hover{
+    cursor: pointer;
+    /* box-shadow: 2px 2px 2px 2px rgb(65, 64, 64); */
+    box-shadow: 0px 0px 10px 0px rgba(119, 117, 117, 0.75);
+}
+.home_res_recom{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.home_res_recommen{
+    text-align: center;
+    color: orangered;
+    font-size: 1.2rem;
+}
+
+.res_card_fetch_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2.4rem;
+    padding: 20px;
+    /* border: 1px solid red; */
+    /* width: 1400px; */
+
+}
+.top_picks_recommen{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 32px;
+    position: relative;
+}
+.top_picks_recommen img{
+    width: 20%;
+    height: 25%;
+    border-radius: 4px;
+}
+
+.top_picks{
+    display: flex;
+    flex-direction: column;
+
+}
+.top_picks h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.top_pick_img{
+    margin-left: 80px;
+}
+@media (max-width:1030px){
+    .banner{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        flex-basis: 100%;
+       
+    }
+    .biryani .southindian .northindian .pizza .chinese{
+        flex-grow: 5;
+    }
+    .banner_menu{
+        width: 85px;
+        height: 100px;
+    }
+}
+
+.offers_button {
+    font-size: 16px;
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 29%;
+    font-weight: 700;
+    color: #ff7576;
+    background-color: #2B3044;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    position: relative;
+    line-height: 24px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 2px #2B3044,
+      0px 4px 16px #2B3044;
+    transform-style: preserve-3d;
+    transform: scale(var(--s, 1)) perspective(600px)
+      rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    perspective: 600px;
+    transition: transform 0.1s;
+  }
+  
+  .sp {
+    background: linear-gradient(
+        90deg,
+        #866ee7,
+        #ea60da,
+        #ed8f57,
+        #fbd41d,
+        #2cca91
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+  }
+  
+  .offers_button:active {
+    transition: 0.3s;
+    transform: scale(0.93);
+  }
+@media (min-width: 663px) and (max-width: 700px){
+    .banner{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    .banner_menu{
+        width: 130px;
+        height: 130px;
+        padding-left: 20px;
+    }
+    .bannermenu1{
+        padding-left: 20px;
+    }
+    .bannermenu2{
+        padding-right: 0px;
+    }
+}
+@media (min-width: 523px) and (max-width: 662px){
+    .banner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .banner_menu{
+        width: 150px;
+        height: 150px;
+    }
+    .bannermenu1{
+        padding-left: 20px;
+    }
+    .bannermenu2{
+        padding-right: 0;
+    }
+}
+
+@media (max-width:522px){
+    .banner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .banner_menu{
+        display: flex;
+        flex-direction: row;
+        width: 120px;
+        height: 120px;
+        /* flex-wrap: wrap; */
+    }
+    
+    .bannermenu1{
+        padding-left: 10px;
+    }
+    .bannermenu2{
+        padding-right: 0;
+    }
+    
+}
+
+.visual_add{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    height: 350px;
+}
+.span_visual{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.span_visual:hover{
+    transform: scale(1.05);
+}
+.img_visual_add img{
+    height: 285px;
+    width: 380px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.text_visual_add{
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:900px;
+}
+.text_visual_add h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.text_visual_add  span{
+    color: orangered;
+}
+.text_visual_add p{
+    font-weight: 500;
+    font-size: 1rem;
+    text-wrap: wrap;
+    padding-left: 40px;
+    color: white;
+}
+
+.video{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.video video{
+    height: 320px;
+    width: 350px;
+
+}
+.app_info {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orangered;
+    margin-top: 60px;
+}
+.top_picks_text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orangered;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.video_image{
+    border-radius: 12px;
+    height: 300px;
+    transition: 0.5s ease-in;
+    
+}
+.video img:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.05);
+    transition: 0.9s ease;
+}

@@ -1,0 +1,46 @@
+.pr_head1{
+    text-align: center;
+    /* margin-top: 30px; */
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: orangered;
+}
+.profile_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* padding-left: 20px; */
+    gap: 60px;
+    margin-top: 40px;
+    height: 80vh;
+    /* padding-bottom: 50px; */
+
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    width: 55rem;
+    height: 12.5rem;
+    padding-left: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.common_coloumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.1rem;
+}
+
+
+.head_common_column{
+    font-weight: 500;
+}
+.blocking_code{
+    display: none;
+}
+
+

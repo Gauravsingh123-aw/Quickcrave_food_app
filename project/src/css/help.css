@@ -1,0 +1,59 @@
+.help_page_main{
+    padding-top: 10px;
+    height: auto;
+    background-color: #37718e;
+    /* z-index: -1; */
+    color: #ffff;
+}
+.segment{
+    position: relative;
+    left: 20px;
+    background-color: #ffff;
+    /* z-index: 1; */
+    width: 1109px;
+    border: 1px solid black;
+    padding-right: 150px;
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+    gap: 50px;
+
+}
+h2{
+    text-align: center;
+}
+.left_trousel{
+    width: 150px;
+    /* height: 30rem; */
+    background-color: #e1e9f4;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    align-items: center;
+    
+}
+
+.trousel::after:active{
+    color: antiquewhite;
+    font-weight: 600;
+}
+.trousel{
+    padding-top: 40px;
+    font-weight: 600;
+}
+.trousel:hover{
+    cursor: pointer;
+}
+
+.text{
+    color: black;
+}
+.text_contact_help{
+    margin:20px;    
+    font-size: large;
+    font-weight: 600;
+    color: black;
+
+}

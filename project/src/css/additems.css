@@ -1,0 +1,95 @@
+.order_main_container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+}
+.first_sec_order_recieved{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    font-weight: 600;
+}
+.second_sec_recieved{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.subclass_second_sec_recieved{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 5px;
+    justify-content: space-around;
+}
+.img_subclass_second_sec_recieved img{
+    width: 7.5rem;
+    height: 6rem;
+
+}
+.details_subclass_second_sec_recieved{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    
+}
+.btn_subclass_second_sec_recieved{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn001{
+    appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+}
+.btn001:hover{
+    box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+}
+.btn002{
+    appearance: none;
+    background-color:#e62143;;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+}
+.btn002:hover{
+    box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+}
+.dishname_text_ordersubclass{
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+.name_customer{
+    font-weight: 600;
+    color: rgb(20, 176, 20);
+}

@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.rescard_main {
+    width: 273px;
+    height: 280px;
+    border-radius: 10px;
+}
+.rescard_main:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.03);
+    transition: all 0.4s ease 0s;
+}
+.rating {
+    padding-left: 10px;
+    color: rgb(10, 145, 10);
+}
+.rescard_img img {
+    height: 152px;
+    /* width: 273px; */
+    border-radius: 10px;
+    margin-bottom: 10px; 
+       width: 90%;
+    /* height: 100%; */
+    object-fit: cover;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.rescard_body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    text-align: left;
+    /* background-color: beige; */
+    /* border: 1px solid black; */
+}
+
+.res_name_2 {
+    
+    font-weight: 700;
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-size: 18px;
+    /* font-style: oblique; */
+    /* text-align: center; */
+    color: rgba(2, 6, 12, 0.75);
+    padding-left: 10px;
+}
+
+.tag_line_1 {
+    /* text-align: center; */
+    color: red;
+    padding-left: 10px;
+}
+
+.add_1 {
+    /* padding-left: 50px; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    padding-left: 10px;
+}
+
+.top_Res_order {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 0 2rem 0 2rem;
+}
+
+.res_page_head {
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-left: 1rem; */
+    padding-right: 50px;
+
+}
+
+.res_page_heading {
+    margin-top: 1rem;
+    width: 250px;
+    padding: 0.8rem 0 0 16rem;
+    color: rgb(236, 16, 16);
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 900;
+    font-size: 1.4rem;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+.res_page_img img {
+    width: 1000px;
+    height: 450px;
+    background-image: image();
+    object-fit: fill;
+    object-fit: contain;
+    margin: 20px 0;
+}
+
+.res_page_name {
+    font-family: 'Playfair Display', serif;
+    color: blue;
+    font-size: 2rem;
+}
+
+.menu_res_page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second_head {
+    font-size: 1.5rem;
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 40px 0 1px 16rem;
+    color: black;
+}
+
+.second_head:hover {
+    cursor: pointer;
+}
+
+#first_option,
+#second_option {
+    border: none;
+    outline: none;
+    padding-bottom: 1px;
+    background-color: white;
+
+}
+
+#first_option:visited {
+    text-decoration: none;
+}
+
+#first_option:focus {
+    padding-bottom: 8px;
+    outline: none;
+    border-radius: 6.5px;
+    border-bottom: 2.99px solid orangered;
+}
+
+#second_option:visited {
+    border: none;
+}
+
+#second_option:focus {
+    padding-bottom: 8px;
+    outline: none;
+    border-radius: 6.5px;
+    border-bottom: 2.99px solid orangered;
+}
+
+
+.res_name_a {
+    font-size: 1.8rem;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: bold;
+}
+
+.res_page_body {
+    /* width: 85%; */
+    /* gap: 0.6rem; */
+    margin-left: 16rem;
+    width: 65%;
+    padding: 2rem 0 0 1rem;
+    height: 120px;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.res_name_location {
+    color: #7e808c;
+}
+
+.res_page_body_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    gap: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #85144b;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+
+}
+
+.rating_a {
+    color: green;
+    padding-right: 1rem;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_res_reccomend {
+    margin-left: 39rem;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    animation: blinking 1.5s infinite;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+@keyframes blinking {
+    0% {
+        color: rgb(243, 14, 14);
+    }
+
+    47% {
+        color: #000;
+    }
+
+    62% {
+        color: transparent;
+    }
+
+    97% {
+        color: transparent;
+    }
+
+    100% {
+        color: #000;
+    }
+}
+
+.menu_itemcards {
+    margin-left: 16rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu_itemcards1 {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+
+.small_card_respage {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    min-height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    color: black;
+    padding: 0 20px;
+    border-top: 1px dotted black;
+}
+.segment_1{
+    padding-top:6px;
+    height: auto;
+}
+
+
+.veg_nonveg img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.respage_small_img img {
+    padding-top: 13px;
+    
+    height: 8rem;
+    width: 10rem;
+    border: 1px solid black;
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
+.dish_name_respage {
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    /* margin-right: 4px; */
+    font-size: 1.22rem;
+    font-weight: 530;
+    color: #3e4152;
+    word-break: break-word;
+}
+
+.dish_price_respage {
+   font-size: 1rem;
+   font-weight: 400;
+}
+.dish_desc{
+    font-size: 1rem;
+    color: rgba(40,44,63,.45);
+    
+}
+
+/* CSS */
+.button-7 {
+    background-color: rgb(238, 231, 231);
+    width: 80px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    
+}
+
+.button-7:hover,
+.button-7:focus {
+    background-color: rgb(218, 223, 227);
+}
+
+.button-7:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+.res_page_full {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #21f36b;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.toggle_Select {
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    color: rgb(13, 136, 13);
+    margin-left: 17.4rem;
+    margin-top: 3.2rem;
+}
+
+.button-7{
+    
+    top: -22px;
+    left: 40px;
+    z-index: 1;
+}
+
+.res_dineout_images{
+    margin-top: 2rem;
+    background: url('../assets/res10.jpg');
+    color: red;
+    height: 500px;
+    width: 85%;
+    margin-left: 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* @media (max-width:) {
+    
+} */

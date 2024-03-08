@@ -1,0 +1,124 @@
+post http://localhost:4000/seller-api/seller-update
+Content-Type: application/json
+
+{
+    "username":"tes",
+    "password":"tes",
+    "name":"done"
+}
+###
+post http://localhost:4000/seller-api/seller
+Content-Type: application/json
+
+{
+    "user_type":"user",
+    "name":"seller2",
+    "username":"tes",
+    "password":"tes"
+}
+
+###
+post http://localhost:4000/seller-api/seller-login
+Content-Type: application/json
+
+{
+    "username":"dilip@123",
+    "password":"dilip"
+}
+
+###
+post http://localhost:4000/seller-api/seller-delete
+Content-Type: application/json
+
+{
+    "username":"test",
+    "password":"test"
+}
+###
+post  http://localhost:4000/res-api/res_details
+Content-Type: application/json
+
+{
+    "res_id":"4"
+}
+
+###
+
+post  http://localhost:4000/res-api/res_detail
+Content-Type: application/json
+
+{
+    "res_id":"4",
+    "res_name":"ads",
+    "address":"asdf",
+    "pincode":"123456",
+    "username":"dilip@123",
+    "mobile":"324",
+    "tagline":"sdag"
+    
+}
+###
+post http://localhost:4000/user-api/user-update
+Content-Type: application/json
+
+{
+    "user_type":"user",
+    "name":"test12345",
+    "username":"test2",
+    "password":"test"
+}
+
+###
+
+post http://localhost:4000/res-api/res_menuadd
+Content-Type: application/json
+
+{
+    "res_id":"1",
+    "menu":"{menu_category: 'cake', dish_name: 'pizza', food_preferance: 'veg', dish_price: '400'}"
+}
+
+###
+post http://localhost:4000/dish-api/getdataby_category
+Content-Type: application/json
+
+{
+    "data":"fast_food"
+}
+
+###
+post http://localhost:4000/user-api/user-addcart
+Content-Type: application/json
+
+{
+    "username":"singhgaurav308",
+    "cart":"roti"
+}
+
+###
+post http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"singhgaurav308"
+}
+
+###
+post http://localhost:4000/res-api/adding_orderhistory
+Content-Type: application/json
+
+{
+    "username":"singhgaurav308",
+    "order":{
+        "_id":"65e249dd709dc7dd8d660346",
+        "res_name":"The Indian Restaurant"
+    }
+}
+###
+post http://localhost:4000/res-api/getdataby_resname
+Content-Type: application/json
+
+{
+    "res_name":"The Pizza House"
+}
+

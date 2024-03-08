@@ -1,0 +1,84 @@
+.form_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 82%;
+}
+.image_segment{
+    width: 22%;
+    height:480px ;
+    border: 1px solid  black;
+    background-image: url('../assets/b2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+}
+.form{
+    height: 480px;
+    width: 380px;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* background-color:rgb(0,0,0,0.1); */
+    background-color: rgb(222, 114, 75);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+
+}
+.form input{
+    width: 60%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color:white;
+    text-align: center;
+}
+.signin_form input{
+    height: 20px;
+    outline: none;
+}
+.continue_signin_btn{
+    border: 1px solid black;
+    /* margin-top: 5px; */
+    margin-bottom: 5px;
+    background-color: black;
+    color: white;
+}
+.continue_signin_btn:hover{
+    /* background-color: rgb(234, 103, 56); */
+    box-shadow: 1px 1px 1px rgb(101, 98, 98);
+    
+    
+}
+.policy{
+    text-align: center;
+    color: black;
+}
+
+.select_type{
+    padding: 10px;
+    color: black;
+}
+
+
+
+
+.select_type{
+    display: flex;
+    flex-direction: row;
+}
+
+.error_color{
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+}
