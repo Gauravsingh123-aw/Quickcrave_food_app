@@ -22,8 +22,7 @@
 }
 .table_row_history td{
     width: 120px;
-    
-    /* border: none; */
+ 
     text-align: left;
 }
 .a{
@@ -58,4 +57,8 @@
 .name_history{
     /* width: 10px; */
     padding-right: 10px;
+}
+
+.sec1_seg2 button{
+    margin-top: 3px;
 }

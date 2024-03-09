@@ -66,9 +66,7 @@ function Owner_Home(){
             </form>
         }
         </div>
-        <div className="order_head_home">Your current Orders:</div>
-        {/* <Outlet/> */}
-        {/* {console.log(menu)} */}
+        
         </div>
     )
 }

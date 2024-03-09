@@ -62,9 +62,7 @@
 .top_Res_order {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
+    width: auto;
     justify-content: space-evenly;
     gap: 60px;
     flex-wrap: wrap;
@@ -438,6 +436,18 @@ input:checked+.slider:before {
 }
 
 
-/* @media (max-width:) {
-    
-} */
+@media (max-width:1000px) {
+    .menu_itemcards{
+        margin-left: 12rem;
+    }
+    .res_page_heading{
+        padding-left:12rem ;
+    }
+    .second_head{
+        padding-left: 12rem;
+    }
+    .res_page_body{
+        margin-left: 12rem;
+    }
+
+}

@@ -35,11 +35,13 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 118px;
+    margin-top: 16px;
 }
 .sec1_seg1_img img{
     width: 10rem;
     height: 6.5rem;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 .sec2_seg1_resname{
     font-family: Basis_Grotesque_Pro_Bold;
@@ -64,4 +66,9 @@
     color: orangered;
     font-weight: 500;
     font-size: 1.5rem;
+}
+.sec1_seg2 div{
+    font-size: 1rem;
+    font-weight: 500;
+    color: red;
 }

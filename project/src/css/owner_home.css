@@ -47,8 +47,7 @@
 .owner_home_main{
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
-    flex-wrap: wrap;
+    min-height: 60vh;
 }
 .order_head_home{
     margin: 5% 0 0 8%;

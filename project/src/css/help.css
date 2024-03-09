@@ -4,13 +4,14 @@
     background-color: #37718e;
     /* z-index: -1; */
     color: #ffff;
+    min-height: 70vh;
 }
 .segment{
     position: relative;
     left: 20px;
     background-color: #ffff;
-    /* z-index: 1; */
     width: 1109px;
+    min-height: 60vh;
     border: 1px solid black;
     padding-right: 150px;
     display: flex;

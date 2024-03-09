@@ -4,9 +4,11 @@ import '../css/history_owner.css'
 import axios from "axios"
 import { useSelector } from "react-redux"
 import { FcApproval } from "react-icons/fc";
+import {useNavigate} from 'react-router-dom'
 
 import '../css/past_orders.css'
 function History_owner(){
+    const Navigate=useNavigate();
 
     //bringing the data of restaurant through current user
     let {currentUser}=useSelector(state=>state.userLogin)
@@ -37,7 +39,7 @@ function History_owner(){
                 <div className="seg2_pastorders">
                         <div className="sec1_seg2">
                             <div>{value.dish_name}</div>
-                            <button onClick={()=>Navigate('/help_faq')}>Help</button>
+                            <button onClick={()=>Navigate('/help')}>Help</button>
                         </div>
                         <div className="sec2_seg2">
                             Total Received:  ₹{value.order.dish_price}

@@ -23,13 +23,8 @@ function Navbar() {
         if (loginStatus == true) {
             sessionStorage.removeItem('token');
             sessionStorage.removeItem('user');
-            dispatch(userLoginLifeCycle())
-            // sessionStorage.removeItem('token');
-            // sessionStorage.removeItem('user');
-            // setLogin_name("");
+            dispatch(userLoginLifeCycle())   
         }
-        // sessionStorage.removeItem('token');
-        // sessionStorage.removeItem('user');
 
     };
     function handleNav() {

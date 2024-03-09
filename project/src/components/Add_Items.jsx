@@ -57,7 +57,7 @@ function Add_Items() {
     return (
 
         <div className="main_pastorder">
-            {
+            {ord.length!=0 ? 
                 ord.map((value, index) => (
                     <div key={index} className="order_main_container">
                         
@@ -88,8 +88,9 @@ function Add_Items() {
                         </div>
 
                     </div>
-                ))
-            } <ToastContainer />
+                )):<h2>No orders Received yet..</h2>
+            } 
+            <ToastContainer />
         </div>
 
     )

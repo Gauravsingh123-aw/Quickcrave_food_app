@@ -1,3 +1,6 @@
+.main_pastorder{
+    min-height: 75vh;
+}
 .order_main_container{
     width: 60%;
     display: flex;
