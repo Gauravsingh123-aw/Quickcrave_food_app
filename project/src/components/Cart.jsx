@@ -21,7 +21,11 @@ function Cart() {
     let deleteCart;
     //Logic to bring cart details from user schema
     async function bringCartdetails(){
-        let res=await axios.post("http://localhost:4000/user-api/users",{username:currentUser.username})
+        let res=await axios.post("http://localhost:4000/user-api/users",{username:currentUser.username},{
+            headers:{
+                Authorization:`Bearer ${sessionStorage.getItem('token')}`
+            }
+        })
         console.log(res.data.message)
         if(res.data.message==="users data fetched"){
         setCartData(res.data.payload.cart)

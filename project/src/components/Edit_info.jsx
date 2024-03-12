@@ -13,7 +13,6 @@ function Edit_info() {
         let name = event.target.name;
         let value = event.target.value;
         setUser({ ...user, [name]: value });
-        setData({ ...data }, user);
     }
 
     function handleEdit(event) {
@@ -27,7 +26,12 @@ function Edit_info() {
     async function handleSave(e) {
         e.preventDefault();
         if (user.username !== "" && user.password !== "") {
-           let ans= await axios.post(`http://localhost:8000/user/`, user)
+           let ans= await axios.post("http://localhost:4000/user-api/user-update", user,{
+            headers:{
+                Authorization: `Bearer ${sessionStorage.getItem('token')}`
+            }
+           })
+           console.log(ans.data.message);
               
         }
         else alert("enter data first");

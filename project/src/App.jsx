@@ -24,6 +24,7 @@ import Res_infor from './owner_component/Res_infor.jsx'
 import Res_page from './components/Res_page.jsx'
 import Banner_food from './owner_component/Banner_food.jsx'
 import Footer from './components/Footer.jsx'
+import AboutUs from './components/About.jsx'
 import PrivateRoutes from './owner_component/protected.jsx'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -70,7 +71,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
-
+          <Route path='/aboutus' element={<AboutUs/>}/>
           <Route path="banner_food" element={<Banner_food />} />
           <Route path='help' element={<Help />}>
             <Route path='help_faq' element={<Help_FAQ />} />
@@ -92,7 +93,7 @@ function App() {
             <Route path='cart' element={<Cart />} />
             <Route path='past_orders' element={<Past_orders />} />
           </Route>
-
+          
           <Route path='res_infor' element={<Res_infor />} />
           <Route path='res_page' element={<Res_page />} />
         </Routes>

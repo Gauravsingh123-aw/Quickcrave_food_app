@@ -15,7 +15,11 @@ function Past_orders(){
 
     async function bringCartHistory(){
         let ans=await axios.post("http://localhost:4000/user-api/users",
-        {username:currentUser.username});
+        {username:currentUser.username},{
+            headers:{
+                Authorization:`Bearer ${sessionStorage.getItem('token')}`
+            }
+        });
       
         console.log(ans.data.payload)
         console.log(ans.data.payload.cart_history)

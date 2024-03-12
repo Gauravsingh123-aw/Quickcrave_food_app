@@ -1,0 +1,30 @@
+.about-us-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-us-container h2 {
+    color: #ff5722; /* Orange-Red color */
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .delivery-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
