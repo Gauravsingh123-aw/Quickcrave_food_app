@@ -70,18 +70,15 @@ async function userLogin(req, res) {
 
 //updating user data
 async function updateUser(req, res) {
-    const data = req.body
-    const ans = await User.findOneAndUpdate({ username: data.username }, { ...data });
+    const data = req.body;
+    const ans = await User.findOneAndUpdate({ username: data.username }, {$set:data},{new:true});
     if (ans !== null) {
         res.status(200).send({ message: "user updated", payload: ans })
     }
     else {
         res.status(200).send({ message: "user not found" })
-
     }
 }
-
-
 
 //deleting the user account
 async function removeUser(req, res) {

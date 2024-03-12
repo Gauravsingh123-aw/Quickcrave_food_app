@@ -7,7 +7,7 @@ const {getUserData,addUser,removeUser,addtoCart_User,removeCart_User,userLogin,u
 const verifyToken = require('../Middlewares/Verifytoken');
 
 //getting user data by username
-userApp.post('/users',expressAsyncHandler(getUserData));
+userApp.post('/users',verifyToken,expressAsyncHandler(getUserData));
 
 
 //adding User
@@ -20,7 +20,7 @@ userApp.post('/user-login',expressAsyncHandler(userLogin))
 userApp.post('/user-delete',expressAsyncHandler(removeUser));
 
 //updating user info
-userApp.post('/user-update',expressAsyncHandler(updateUser))
+userApp.post('/user-update',verifyToken,expressAsyncHandler(updateUser))
 
 
 //add products to cart of user
