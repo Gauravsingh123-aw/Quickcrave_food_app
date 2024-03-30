@@ -34,7 +34,7 @@ function Home() {
     const [res, setres] = useState([]);
     const Navigate = useNavigate();
     async function BringResDetails() {
-        let ans = await axios.get("http://quickcrave-food-app.vercel.app/res-api/res_detail_home")
+        let ans = await axios.get("https://quickcrave-food-app.vercel.app/res-api/res_detail_home")
         setres(ans.data.payload)
     }
     useEffect(() => { BringResDetails() }, []);
