@@ -7,7 +7,7 @@ const {getUserData,addUser,removeUser,addtoCart_User,removeCart_User,userLogin,u
 const verifyToken = require('../Middlewares/Verifytoken');
 
 //getting user data by username
-userApp.post('/users',verifyToken,expressAsyncHandler(getUserData));
+userApp.post('/users',expressAsyncHandler(getUserData));
 
 
 //adding User
