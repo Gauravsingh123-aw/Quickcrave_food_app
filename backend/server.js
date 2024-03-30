@@ -22,9 +22,9 @@ app.use('/dish-api',dishApp)
 app.use('/seller-api',sellerApp)
 
 
-app.use((req,res,next)=>{
-    res.sendFile(path.join(__dirname,'../project/dist/index.html'))
-})
+// app.use((req,res,next)=>{
+//     res.sendFile(path.join(__dirname,'../project/dist/index.html'))
+// })
 
 
 //error handler middleware
