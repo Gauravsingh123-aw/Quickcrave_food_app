@@ -6,7 +6,6 @@ const expressAsyncHandler=require('express-async-handler')
 const {upload}=require('../Middlewares/cloudinary_1')
 
 
-
 const{getDishdata,addDishdata,deleteDish,getdatabyCategory}=require('../Controllers/dish_controller')
 
 // getting all the dish data

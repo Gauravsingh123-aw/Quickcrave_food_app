@@ -23,7 +23,7 @@ function Past_orders(){
       
         console.log(ans.data.payload)
         console.log(ans.data.payload.cart_history)
-        setOrd(ans.data.payload.cart_history)
+        setOrd(ans.data.payload.cart_history.reverse())
         
         
     }

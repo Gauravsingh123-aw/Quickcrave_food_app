@@ -33,9 +33,7 @@ function Cart() {
         else if(res.data.message==="jwt expired"){
             toast("Session Expired!!")
         }
-        else{
-            toast("Error occured.")
-        }
+        
     }
     useEffect(()=>{bringCartdetails()},[dataSent,cartData,deleteCart]);
 

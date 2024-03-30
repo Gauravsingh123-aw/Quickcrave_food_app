@@ -120,7 +120,7 @@ function Res_page() {
                                     <div className='respage_small_img'><img src={value.profileImageUrl} /> </div>
                                     <button className='button-7' onClick={() => { handleAddCart(value) }}>Add</button>
                                     </div>
-                                    {console.log("cart data is",cart)}
+                                    {/* {console.log("cart data is",cart)} */}
                                 </div>
                             </div>
                         ))

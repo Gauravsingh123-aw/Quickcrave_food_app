@@ -35,6 +35,9 @@ function Register() {
             }
             else {
                 setem(res.data.message);
+                toast.warning(res.data.message,{
+                    position:"bottom-right"
+                })
             }
 
         }

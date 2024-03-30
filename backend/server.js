@@ -21,9 +21,12 @@ app.use('/res-api',resApp)
 app.use('/dish-api',dishApp)
 app.use('/seller-api',sellerApp)
 
+
 app.use((req,res,next)=>{
     res.sendFile(path.join(__dirname,'../project/dist/index.html'))
 })
+
+
 //error handler middleware
 app.use((err,req,res,next)=>{
     res.send({message:err.message,payload:"Error occured"})
