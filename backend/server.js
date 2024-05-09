@@ -7,7 +7,7 @@ const app= exp()
 
 const path=require('path') //for connecting the frontend
 
-app.use(exp.static(path.join(__dirname,'../project/dist')))
+app.use(exp.static(path.join(__dirname,'/dist')))
 // app.use(cors())
 
 
