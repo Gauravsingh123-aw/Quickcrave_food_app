@@ -35,6 +35,14 @@ app.use((err,req,res,next)=>{
     res.send({message:err.message,payload:"Error occured"})
 })
 
+// In your server.js or middleware file
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Allow requests from any origin
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 
 //assigning on port no 400
 let port=process.env.PORT || 4000
