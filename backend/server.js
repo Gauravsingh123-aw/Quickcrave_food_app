@@ -1,12 +1,15 @@
 const exp=require('express')
 require('dotenv').config()
+const cors=require('cors');
 //creating the epxress app
 const app= exp()
 
 
-const path=require('path') //for connecting the frontend
+// const path=require('path') //for connecting the frontend
 
-app.use(exp.static(path.join(__dirname,'../project/dist')))
+// app.use(exp.static(path.join(__dirname,'../project/dist')))
+app.use(cors())
+
 
 //body parser middleware
 app.use(exp.json())
