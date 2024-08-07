@@ -1,4 +1,5 @@
 const exp=require('express')
+const cors=require('cors')
 require('dotenv').config()
 
 //creating the epxress app
@@ -13,8 +14,8 @@ app.use((req, res, next) => {
     next();
   });
 
-app.use(exp.static(path.join(__dirname,'/dist')))
-// app.use(cors())
+// app.use(exp.static(path.join(__dirname,'/dist')))
+app.use(cors())
 
 
 //body parser middleware
