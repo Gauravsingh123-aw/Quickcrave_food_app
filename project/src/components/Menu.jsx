@@ -50,14 +50,14 @@ function Menu() {
         console.log(formdata)
 
         //sending data to dish schema
-        let a = await axios.post("http://localhost:4000/dish-api/add_dish_data", formdata)
+        let a = await axios.post("https://quickcrave-food-app.vercel.app/dish-api/add_dish_data", formdata)
         console.log(a.data.payload)
         if (a.data.message === "dish added") {
             let resData_sent = {
                 m: a.data.payload,
                 rname: data.res_name
             }
-            let ans = await axios.post("http://localhost:4000/res-api/res_menuadd", resData_sent)
+            let ans = await axios.post("https://quickcrave-food-app.vercel.app/res-api/res_menuadd", resData_sent)
             console.log(ans.data)
             setMess(ans.data.message);
 
@@ -65,7 +65,7 @@ function Menu() {
 
     }
     async function handleError(req, res) {
-        let ans = await axios.post("http://localhost:4000/res-api/res_details", {
+        let ans = await axios.post("https://quickcrave-food-app.vercel.app/res-api/res_details", {
             username: currentUser.username
         });
         // console.log(ans.data.payload[0])

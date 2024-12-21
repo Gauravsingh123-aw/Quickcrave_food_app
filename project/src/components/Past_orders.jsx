@@ -14,7 +14,7 @@ function Past_orders(){
     let Navigate=useNavigate();
 
     async function bringCartHistory(){
-        let ans=await axios.post("http://localhost:4000/user-api/users",
+        let ans=await axios.post("https://quickcrave-food-app.vercel.app/user-api/users",
         {username:currentUser.username},{
             headers:{
                 Authorization:`Bearer ${sessionStorage.getItem('token')}`

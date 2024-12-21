@@ -26,7 +26,7 @@ function Edit_info() {
     async function handleSave(e) {
         e.preventDefault();
         if (user.username !== "" && user.password !== "") {
-           let ans= await axios.post("http://localhost:4000/user-api/user-update", user,{
+           let ans= await axios.post("https://quickcrave-food-app.vercel.app/user-api/user-update", user,{
             headers:{
                 Authorization: `Bearer ${sessionStorage.getItem('token')}`
             }

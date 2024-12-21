@@ -24,7 +24,7 @@ function Banner_food() {
     let srcc;
     // Logic for fetching data based on category
     async function handleBannerFood() {
-        let res = await axios.post("http://localhost:4000/dish-api/getdataby_category", { data: category })
+        let res = await axios.post("https://quickcrave-food-app.vercel.app/dish-api/getdataby_category", { data: category })
         console.log(res.data.payload)
         setfood(res.data.payload)
     }
@@ -37,7 +37,7 @@ function Banner_food() {
             Navigate('/signin')
         }
         else {
-            let res = await axios.post("http://localhost:4000/user-api/user-addcart", {
+            let res = await axios.post("https://quickcrave-food-app.vercel.app/user-api/user-addcart", {
                 username: currentUser.username,
                 cart: value
             },

@@ -21,7 +21,7 @@ function Cart() {
     let deleteCart;
     //Logic to bring cart details from user schema
     async function bringCartdetails(){
-        let res=await axios.post("http://localhost:4000/user-api/users",{username:currentUser.username})
+        let res=await axios.post("https://quickcrave-food-app.vercel.app/user-api/users",{username:currentUser.username})
         console.log(res.data.message)
         if(res.data.message==="users data fetched"){
         setCartData(res.data.payload.cart)
@@ -41,7 +41,7 @@ function Cart() {
             dish_id:id
         }
         setDataSent(data_tobeSent);
-        let rep=await axios.post("http://localhost:4000/user-api/user_removecart",data_tobeSent);
+        let rep=await axios.post("https://quickcrave-food-app.vercel.app/user-api/user_removecart",data_tobeSent);
         console.log(rep.data)
 
     }
@@ -53,13 +53,13 @@ function Cart() {
         // we have to perform 3 operations here
         // 1- add cart data to order history of user
       
-        let history_data=await axios.post("http://localhost:4000/user-api/user_order_history",{
+        let history_data=await axios.post("https://quickcrave-food-app.vercel.app/user-api/user_order_history",{
             username:currentUser.username,
             cart:cartData
         });
 
         // 2- send the cart data to respective restaurant orders
-        let  res_order=await axios.post("http://localhost:4000/res-api/getting_order",{
+        let  res_order=await axios.post("https://quickcrave-food-app.vercel.app/res-api/getting_order",{
             username:currentUser.username,
             
             cart:cartData
@@ -67,7 +67,7 @@ function Cart() {
         console.log(res_order.data);
         
         // 3- delete cart data of user
-        deleteCart=await axios.post("http://localhost:4000/user-api/delete_Cart",{username:currentUser.username});
+        deleteCart=await axios.post("https://quickcrave-food-app.vercel.app/user-api/delete_Cart",{username:currentUser.username});
 
     }
 

@@ -44,7 +44,7 @@ function App() {
       // console.log("haanji",obj)
       if (obj.user_type === "user") {
         // console.log("pahuch gaye")   
-        let ans = await axios.post("http://localhost:4000/user-api/token_verify", { username: obj.username }, {
+        let ans = await axios.post("https://quickcrave-food-app.vercel.app/user-api/token_verify", { username: obj.username }, {
           headers: {
             authorization: `Bearer ${token}`
           }
@@ -53,7 +53,7 @@ function App() {
         dispatch(refreshCurrentUser(ans.data));
       }
       else if(obj.user_type==="seller"){
-        let ans = await axios.post("http://localhost:4000/seller-api/token_verify", { username: obj.username }, {
+        let ans = await axios.post("https://quickcrave-food-app.vercel.app/seller-api/token_verify", { username: obj.username }, {
           headers: {
             authorization: `Bearer ${token}`
           }

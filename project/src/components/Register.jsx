@@ -22,7 +22,7 @@ function Register() {
         e.preventDefault();
         console.log(user)
         if (user.user_type === "user") {
-            let res = await axios.post("http://localhost:4000/user-api/user", user);
+            let res = await axios.post("https://quickcrave-food-app.vercel.app/user-api/user", user);
             console.log(res);
             if (res.status === 201) {
                 if (res.data.message === 'User created') {
@@ -42,7 +42,7 @@ function Register() {
 
         }
         else if(user.user_type==="seller"){
-            let res = await axios.post("http://localhost:4000/seller-api/seller", user);
+            let res = await axios.post("https://quickcrave-food-app.vercel.app/seller-api/seller", user);
             console.log(res);
             if (res.status === 201) {
                 if (res.data.message === 'seller created') {

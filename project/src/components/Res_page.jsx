@@ -55,7 +55,7 @@ function Res_page() {
             Navigate('/signin')
         }
         else {
-            let res=await axios.post("http://localhost:4000/user-api/user-addcart",{
+            let res=await axios.post("https://quickcrave-food-app.vercel.app/user-api/user-addcart",{
                 username:currentUser.username,
                 cart:value
             });

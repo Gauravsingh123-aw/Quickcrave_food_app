@@ -35,7 +35,7 @@ function Owner_Home(){
         console.log(resdata);
         
         // sending the res details submitted by seller
-        let ans= await axios.post("http://localhost:4000/res-api/res_detail",resdata)
+        let ans= await axios.post("https://quickcrave-food-app.vercel.app/res-api/res_detail",resdata)
         console.log(ans,ans.data)
 
         alert(ans.data.message);

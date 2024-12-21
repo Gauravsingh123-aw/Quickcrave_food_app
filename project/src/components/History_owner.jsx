@@ -16,7 +16,7 @@ function History_owner(){
     let [res,setRes]=useState([]) // to hold record of restaurant
 
     async function bringResDetails(){
-        let ans=await axios.post("http://localhost:4000/res-api/gettingOrderHistory",{username:currentUser.username})
+        let ans=await axios.post("https://quickcrave-food-app.vercel.app/res-api/gettingOrderHistory",{username:currentUser.username})
         console.log("res",ans.data.payload[0].order_history);
         setRes(ans.data.payload[0].order_history.reverse())
     }

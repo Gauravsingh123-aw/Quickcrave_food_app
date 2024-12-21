@@ -19,7 +19,7 @@ function Add_Items() {
     //getting the order details from restaurant-api
     async function bringOrderDetails() {
         let name;
-        let ans = await axios.post("http://localhost:4000/res-api/res_details", { username: currentUser.username });
+        let ans = await axios.post("https://quickcrave-food-app.vercel.app/res-api/res_details", { username: currentUser.username });
      
         console.log("uname", ans.data.payload[0].orders)
         setOrd(ans.data.payload[0].orders)
@@ -34,9 +34,9 @@ function Add_Items() {
         // we need to perform two operations 
         // 1-save data to res order history
 
-        let ans = await axios.post("http://localhost:4000/res-api/adding_orderhistory", { ord: orderDetails })
+        let ans = await axios.post("https://quickcrave-food-app.vercel.app/res-api/adding_orderhistory", { ord: orderDetails })
         // 2-deleting data from order of res 
-        let ans1 = await axios.post("http://localhost:4000/res-api/order_rejection", { order: orderDetails })
+        let ans1 = await axios.post("https://quickcrave-food-app.vercel.app/res-api/order_rejection", { order: orderDetails })
         if (ans1.data.message === "deleted the order from order") {
             toast("order Approved");
         }
@@ -46,7 +46,7 @@ function Add_Items() {
     //Logic for cancelling the order
     async function rejectOrder(order) {
         //deleting the data from order of res
-        let ans = await axios.post("http://localhost:4000/res-api/order_rejection", { order: order })
+        let ans = await axios.post("https://quickcrave-food-app.vercel.app/res-api/order_rejection", { order: order })
         // console.log(ans.data.payload)
         if (ans.data.message === "deleted the order from order") {
             toast("order rejected");
