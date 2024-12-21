@@ -5,7 +5,7 @@ export const userLoginLifeCycle = createAsyncThunk('user-login', async (user, th
     try {
         let res;
         if (user.user_type === "user") {
-            res = await axios.post('http://localhost:4000/user-api/user-login', user)
+            res = await axios.post('https://quickcrave-food-app.vercel.app/user-api/user-login', user)
             // return res.data;
             
 
