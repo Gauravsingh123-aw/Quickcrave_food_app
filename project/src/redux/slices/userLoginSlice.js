@@ -21,7 +21,7 @@ export const userLoginLifeCycle = createAsyncThunk('user-login', async (user, th
             return res.data;
         }
         else if(user.user_type==="seller"){
-            res = await axios.post('http://localhost:4000/seller-api/seller-login', user)
+            res = await axios.post('https://quickcrave-food-app.vercel.app/seller-api/seller-login', user)
             // return res.data;
             console.log(res.data)
             if (res.data.message === "Login success") {

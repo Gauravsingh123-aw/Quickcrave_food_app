@@ -43,7 +43,6 @@ function App() {
       let obj = JSON.parse(sessionStorage.getItem('user'));
       // console.log("haanji",obj)
       if (obj.user_type === "user") {
-        // console.log("pahuch gaye")   
         let ans = await axios.post("https://quickcrave-food-app.vercel.app/user-api/token_verify", { username: obj.username }, {
           headers: {
             authorization: `Bearer ${token}`
