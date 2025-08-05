@@ -1,27 +1,157 @@
-.chead{
+
+.chead {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 60%;
+    min-height: 60vh;
     width: 100%;
+    background: var(--primary-bg, #fff7f2);
+    padding: 2.5rem 0 2rem 0;
 }
-.cart_head{
-    margin:20px 0;
-    width: 85%;
-    /* border: 1px solid black; */
-    border: 1px dotted black;
+
+.cart_head {
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px 0 rgba(255, 69, 0, 0.08);
+    border: 1.5px solid #ffe5d0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+    gap: 1.5rem;
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    margin: 1.2rem 0;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
 }
-.cardpage_small_img img{
-    width: 12rem;
-    height: 7.6rem;
-    padding-top: 4px;
+.cart_head:hover {
+    box-shadow: 0 6px 32px 0 rgba(255, 69, 0, 0.13);
+    transform: translateY(-2px) scale(1.01);
+}
+
+.cardpage_small_img img {
+    width: 110px;
+    height: 80px;
     object-fit: cover;
-    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(255, 69, 0, 0.08);
+}
+
+.cart_name_respage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 1rem;
+    min-width: 120px;
+    flex: 1 1 120px;
+}
+.dish_namecard {
+    color: var(--primary, orangered);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+
+.dish_price_respage {
+    color: #22223b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 1.2rem;
+}
+
+.veg_nonveg img {
+    width: 22px;
+    height: 22px;
+    margin-left: 0.5rem;
+}
+
+.button-24 {
+    background: var(--primary, orangered);
+    border: 1px solid var(--primary, orangered);
+    border-radius: 8px;
+    margin-right: 0;
+    box-shadow: 0 2px 8px 0 rgba(255, 69, 0, 0.08);
+    color: #fff;
+    cursor: pointer;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    min-height: 40px;
+    outline: 0;
+    padding: 10px 18px;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+    transition: background 0.2s, color 0.2s;
+}
+.button-24:hover,
+.button-24:active {
+    background: #fff;
+    color: var(--primary, orangered);
+    border: 1.5px solid var(--primary, orangered);
+}
+
+.price_data {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary, orangered);
+    margin: 1.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.button-41 {
+    background-color: var(--primary, orangered);
+    background-image: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 8px 0 rgba(255, 69, 0, 0.08);
+    color: #fff;
+    cursor: pointer;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 32px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 9;
+    border: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+.button-41:hover {
+    background: #fff;
+    color: var(--primary, orangered);
+    border: 1.5px solid var(--primary, orangered);
+}
+
+.sum_cart_payment{
+  display: none;
+}
+
+.empty_Cart_image{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.empty_Cart_image h3{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.empty_Cart_image img{
+  height:460px;
+  width: 750px;
 }
 
 

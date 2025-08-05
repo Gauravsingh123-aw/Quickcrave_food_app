@@ -65,24 +65,22 @@ function SignIn() {
 
   return (
     <>
-          <div  className="error_message_toast">{errorMessage!=="" &&<>{errorMessage}</>}</div>
 
-    <div className="form_main1">
-      <div className="image_part"><div className="image_segment2"></div><div className="image_text">Quick Crave</div></div>
-      <form onSubmit={handleSubmit} className="signin_form">
-       
-        <div className="select_type">
-          <span className="select_type"><input type="radio" name="user_type" value="user" onChange={handleChange} />User</span>
-          <span className="select_type"><input type="radio" name="user_type" value="seller" onChange={handleChange} />Seller</span>
+    <div className="form_main1 new_theme_bg">
+                <div  className="error_message_toast">{errorMessage!=="" &&<>{errorMessage}</>}</div>
+
+      <form onSubmit={handleSubmit} className="signin_form new_form">
+        <h2 className="register_title">Sign In</h2>
+        <div className="select_type radio_group">
+          <label className="radio_label"><input type="radio" name="user_type" value="user" onChange={handleChange} /> User</label>
+          <label className="radio_label"><input type="radio" name="user_type" value="seller" onChange={handleChange} /> Seller</label>
         </div>
-        <input type="text" name="username" placeholder="username" onChange={handleChange} /><br />
-        <input type="password" name="password" placeholder="password" onChange={handleChange} /><br />
-        <button className="btn1">Submit</button><br />
+        <input type="text" name="username" placeholder="Username" onChange={handleChange} className="input_field" />
+        <input type="password" name="password" placeholder="Password" onChange={handleChange} className="input_field" />
+        <button className="btn1 new_btn">Sign In</button>
         <div className="register_link" onClick={() => Navigate("/register")}>New User? Register here..</div>
-        
       </form>
       <ToastContainer />
-
     </div>
     </>
   )

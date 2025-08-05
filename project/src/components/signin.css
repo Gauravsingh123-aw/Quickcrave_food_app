@@ -1,95 +1,115 @@
-.form_main1{
-    display: flex;
-    justify-content: center;
- 
-    height: 530px;
-    background-color: white;
-    margin: 10px 20px 0 20px;
 
+@import url('../css/register.css');
+
+.form_main1 {
+    background: var(--primary-bg);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
 }
-.image_part{
+
+.new_form {
+    margin: 2.5rem auto 0 auto;
+    /* ...existing code... */
+}
+
+.new_form {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px 0 rgba(37,99,235,0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 260px;
-    border: 2px solid black;
-    border-right: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-right: 1px solid black;
+    gap: 1.2rem;
+    align-items: stretch;
 }
-.signin_form{
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(242, 241, 241, 0.1);
-    color:white;
+
+.register_title {
+    color: var(--primary);
+    font-size: 2rem;
     font-weight: 700;
-    border: 2px solid black;
-    border-left: none;
-
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 
-
-.image_segment2{
-    /* height: 260px; */
-    height: 85%;
-    /* width: 260px; */
+.input_field {
     width: 100%;
-    /* border: 1px solid black; */
-    background-image: url('../assets/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top-left-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 1rem;
+    transition: border 0.2s;
+    outline: none;
+    box-sizing: border-box;
 }
-.image_text{
-    height: 15%;
-    width: 100%;
-    text-align: center;
-    /* border: 1px solid black; */
-    background-color: black;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.8rem;
-    border-bottom-left-radius: 8px;
+.input_field:focus {
+    border-color: var(--input-focus);
+    background: var(--primary-light);
 }
 
-.signin_form input{
-    /* border:none; */
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 10px;
-    text-align: center;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+.radio_group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
 }
-.btn1{
-    /* border: 1px solid black;   */
-    background-color: rgb(20, 20, 20);
-    color: white;
-}
-.btn:hover{
-    /* background-color: rgb(234, 103, 56); */
-    box-shadow: 1px 1px 1px rgb(101, 98, 98);
-    
-}
-
-.register_link:hover{
+.radio_label {
+    font-size: 1rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
     cursor: pointer;
 }
-.register_link{
-    color: orangered;
+.radio_label input[type="radio"] {
+    accent-color: var(--primary);
 }
-.error_message_toast{
-     text-align: center;
-     font-size: 1.2rem;
-     font-weight: 800;
-     margin-top: 60px;
-    height: 50px;
-    color: red;
 
+.new_btn {
+    width: 100%;
+    padding: 0.8rem 0;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-bottom: 0.2rem;
+    box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+}
+.new_btn:hover {
+    background: #1741a6;
+    box-shadow: 0 4px 16px 0 rgba(37,99,235,0.13);
+}
+
+.register_link {
+    color: var(--primary);
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.register_link:hover {
+    color: #1741a6;
+}
+
+.error_message_toast {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 60px;
+    height: 50px;
+    color: var(--error);
 }

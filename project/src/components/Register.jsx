@@ -63,24 +63,22 @@ function Register() {
     }
     return (
 
-        <div className="form_main">
-            <div className="image_segment">
-
-            </div>
-            <form onSubmit={handleSubmit} className="form" >
-                <input type="text" name="name" placeholder="Full Name" onChange={handleChange} />
-                <input type="text" name="username" minLength={4} placeholder="username" onChange={handleChange} />
-                <input type="password" name="password" minLength={4} placeholder="password" onChange={handleChange} />
-                <input type="email" name="email" placeholder="email" onChange={handleChange} />
-                <input type="tel" name="mobile" minLength={10} placeholder="mobile no" onChange={handleChange} />
-                <input type="text" name="address" placeholder="Address" onChange={handleChange} />
-                <div className="select_type">
-                    <span className="select_type"><input type="radio" name="user_type" value="user" onChange={handleChange} />User</span>
-                    <span className="select_type"><input type="radio" name="user_type" value="seller" onChange={handleChange} />Seller</span>
+        <div className="form_main new_theme_bg">
+            <form onSubmit={handleSubmit} className="form new_form" >
+                <h2 className="register_title">Create Account</h2>
+                <input type="text" name="name" placeholder="Full Name" onChange={handleChange} className="input_field" />
+                <input type="text" name="username" minLength={4} placeholder="Username" onChange={handleChange} className="input_field" />
+                <input type="password" name="password" minLength={4} placeholder="Password" onChange={handleChange} className="input_field" />
+                <input type="email" name="email" placeholder="Email" onChange={handleChange} className="input_field" />
+                <input type="tel" name="mobile" minLength={10} placeholder="Mobile No" onChange={handleChange} className="input_field" />
+                <input type="text" name="address" placeholder="Address" onChange={handleChange} className="input_field" />
+                <div className="select_type radio_group">
+                    <label className="radio_label"><input type="radio" name="user_type" value="user" onChange={handleChange} /> User</label>
+                    <label className="radio_label"><input type="radio" name="user_type" value="seller" onChange={handleChange} /> Seller</label>
                 </div>
-                <button className="continue_signin_btn">Continue</button>
+                <button className="continue_signin_btn new_btn">Continue</button>
                 <div className="error_color">{em}</div>
-                <div className="policy">By creating an account, I accept the <br />Terms & Conditions </div>
+                <div className="policy">By creating an account, I accept the <span className="policy_link">Terms & Conditions</span></div>
             </form>
             <ToastContainer />
         </div>

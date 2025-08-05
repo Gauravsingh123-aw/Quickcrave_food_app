@@ -1,74 +1,117 @@
-.main_pastorder{
+
+.main_pastorder {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    gap: 55px;
+    padding-top: 2.5rem;
+    gap: 2.5rem;
+    background: var(--primary-bg, #fff7f2);
+    min-height: 100vh;
 }
-.main_pastorder h3{
+.main_pastorder h3 {
     text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-    color: orangered;
-    margin-bottom: -20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary, orangered);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
-.main_container_pastorders{
+.main_container_pastorders {
+    width: 95%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px 0 rgba(255, 69, 0, 0.08);
+    border: 1.5px solid #ffe5d0;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 208px;
-    border: 1px dotted black;
+    margin: 0.5rem 0;
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    gap: 1.2rem;
+    transition: box-shadow 0.2s, transform 0.2s;
 }
-.seg1_pastorders{
+.main_container_pastorders:hover {
+    box-shadow: 0 6px 32px 0 rgba(255, 69, 0, 0.13);
+    transform: translateY(-2px) scale(1.01);
+}
+.seg1_pastorders {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px dotted black;
-    gap: 60px;
-    height: 115px;
-    padding-top: 15px;
-    
+    align-items: center;
+    border-bottom: 1px solid #ffe5d0;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
 }
-.seg2_pastorders{
-    display:flex;
+.sec1_seg1_img img {
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(255, 69, 0, 0.08);
+}
+.sec2_seg1_details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 120px;
+    flex: 1 1 120px;
+}
+.sec2_seg1_resname {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary, orangered);
+}
+.sec2_seg1_cat {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+.sec3_seg1_time {
+    margin-left: auto;
+    font-size: 1.05rem;
+    color: #00bd68;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.seg2_pastorders {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 118px;
-    margin-top: 16px;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    gap: 1.5rem;
 }
-.sec1_seg1_img img{
-    width: 10rem;
-    height: 6.5rem;
-    padding-left: 10px;
-    padding-bottom: 10px;
+.sec1_seg2 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
 }
-.sec2_seg1_resname{
-    font-family: Basis_Grotesque_Pro_Bold;
-    font-weight: 700;
-    font-size: 18px;
+.sec1_seg2 div {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary, orangered);
 }
-.sec2_seg1_cat{
-    font-size: 15px;
-    font-weight: 500;
-}
-.sec3_seg1_time{
-    margin-left: 280px;
-}
-
-.sec1_seg2 button{
-    color: black;
-    background-color: rgb(238, 113, 67);
-    border-radius: 5px;
-    padding-top: 5px;
-}
-#username_history{
-    color: orangered;
-    font-weight: 500;
-    font-size: 1.5rem;
-}
-.sec1_seg2 div{
+.sec1_seg2 button {
+    color: #fff;
+    background-color: var(--primary, orangered);
+    border-radius: 8px;
+    border: none;
+    padding: 8px 18px;
     font-size: 1rem;
-    font-weight: 500;
-    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-left: 0.5rem;
+}
+.sec1_seg2 button:hover {
+    background: #fff;
+    color: var(--primary, orangered);
+    border: 1.5px solid var(--primary, orangered);
+}
+.sec2_seg2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #22223b;
 }

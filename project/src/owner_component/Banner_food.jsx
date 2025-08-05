@@ -65,34 +65,32 @@ function Banner_food() {
     }
 
     return (
-        <div className="main_container_banner_food">
-       
-            {
-                food.map((value) => (
-                    <div className="rescard_main1" key={value.id}>
-                        {/* {handlePhoto(value)} */}
-                       
-                        <div className="rescard_img"><img src={value.profileImageUrl} /></div>
-                            <div className="rescard_body">
-                                <div className='body_cardmenu'>
-                                    <span>{value.dish_name}</span>
-                                    <span>{value.food_preferance == "veg" ? <img src={veg} /> : <img src={nonveg} />}</span>
+        <main className="banner_food_main">
+            <section className="banner_food_grid_section">
+                <div className="banner_food_grid">
+                    {food.map((value, idx) => (
+                        <div className="banner_food_card" key={value.id || idx}>
+                            <div className="banner_food_img_wrap">
+                                <img src={value.profileImageUrl} alt={value.dish_name} className="banner_food_img" />
+                            </div>
+                            <div className="banner_food_info">
+                                <div className='banner_food_title_row'>
+                                    <span className="banner_food_name">{value.dish_name}</span>
+                                    <span className="banner_food_type">{value.food_preferance === "veg" ? <img src={veg} alt="veg" /> : <img src={nonveg} alt="nonveg" />}</span>
                                 </div>
-                                <div className='body_cardmenu'>
-                                    <span>ᴄᴀᴛᴇɢᴏʀʏ: {value.menu_category}</span>
-                                    <span>₹{value.dish_price}</span>
+                                <div className='banner_food_meta_row'>
+                                    <span className="banner_food_category">{value.menu_category}</span>
+                                    <span className="banner_food_price">₹{value.dish_price}</span>
                                 </div>
-                                <div className='cardmenu_res_name'>{value.res_name ? value.res_name : "special offer get 40% off!"}</div>
-                                <button onClick={() => { handleAddCart(value) }} className="button-18">Add to Cart</button>
+                                <div className='banner_food_res_name'>{value.res_name ? value.res_name : "Special offer: get 40% off!"}</div>
+                                <button onClick={() => { handleAddCart(value) }} className="banner_food_btn">Add to Cart</button>
                             </div>
                         </div>
-
-                   
-                ))
-            }
-             <ToastContainer />
-    
-        </div>
+                    ))}
+                </div>
+                <ToastContainer />
+            </section>
+        </main>
     )
 }
 export default Banner_food

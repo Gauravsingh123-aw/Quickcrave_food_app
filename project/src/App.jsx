@@ -36,32 +36,39 @@ function App() {
   let { loginStatus } = useSelector(state => state.userLogin);
   let dispatch = useDispatch();
 
-  useEffect(async () => {
+ useEffect(() => {
+  const verifyToken = async () => {
     const token = sessionStorage.getItem('token');
     if (loginStatus === false && token !== null) {
+      const obj = JSON.parse(sessionStorage.getItem('user'));
 
-      let obj = JSON.parse(sessionStorage.getItem('user'));
-      // console.log("haanji",obj)
-      if (obj.user_type === "user") {
-        let ans = await axios.post("https://quickcrave-food-app.vercel.app/user-api/token_verify", { username: obj.username }, {
-          headers: {
-            authorization: `Bearer ${token}`
-          }
-        })
-        // console.log(ans.data.payload);
-        dispatch(refreshCurrentUser(ans.data));
-      }
-      else if(obj.user_type==="seller"){
-        let ans = await axios.post("https://quickcrave-food-app.vercel.app/seller-api/token_verify", { username: obj.username }, {
-          headers: {
-            authorization: `Bearer ${token}`
-          }
-        })
-        // console.log(ans.data.payload);
-        dispatch(refreshCurrentUser(ans.data));
+      try {
+        let ans;
+        if (obj.user_type === "user") {
+          ans = await axios.post(
+            "https://quickcrave-food-app.vercel.app/user-api/token_verify",
+            { username: obj.username },
+            { headers: { authorization: `Bearer ${token}` } }
+          );
+        } else if (obj.user_type === "seller") {
+          ans = await axios.post(
+            "https://quickcrave-food-app.vercel.app/seller-api/token_verify",
+            { username: obj.username },
+            { headers: { authorization: `Bearer ${token}` } }
+          );
+        }
+
+        if (ans?.data) {
+          dispatch(refreshCurrentUser(ans.data));
+        }
+      } catch (error) {
+        console.error("Token verification failed:", error);
       }
     }
-  }, [])
+  };
+
+  verifyToken();
+}, []);
 
   return (
     <>

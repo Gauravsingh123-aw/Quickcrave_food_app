@@ -1,3 +1,123 @@
+/* --- Modern Banner Food Page Additions --- */
+.banner_food_main {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--primary-bg, #fff7f2);
+    padding: 2.5rem 0 2rem 0;
+}
+
+.banner_food_grid_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_food_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2.2rem 2rem;
+    width: 90vw;
+    max-width: 1200px;
+}
+
+.banner_food_card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px 0 rgba(255, 69, 0, 0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    min-height: 320px;
+    border: 1.5px solid #ffe5d0;
+}
+.banner_food_card:hover {
+    box-shadow: 0 6px 32px 0 rgba(255, 69, 0, 0.13);
+    transform: translateY(-4px) scale(1.03);
+}
+.banner_food_img_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.banner_food_img {
+    width: 90%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(255, 69, 0, 0.08);
+}
+.banner_food_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+.banner_food_title_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+.banner_food_name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary, orangered);
+}
+.banner_food_type img {
+    width: 22px;
+    height: 22px;
+    margin-left: 0.5rem;
+}
+.banner_food_meta_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.1rem;
+}
+.banner_food_category {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.banner_food_price {
+    font-weight: 700;
+    color: var(--primary, orangered);
+}
+.banner_food_res_name {
+    color: #22223b;
+    font-size: 0.97rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+}
+.banner_food_btn {
+    width: 100%;
+    padding: 0.7rem 0;
+    background: var(--primary, orangered);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-top: 0.2rem;
+    box-shadow: 0 2px 8px 0 rgba(255, 69, 0, 0.08);
+}
+.banner_food_btn:hover {
+    background: #d84315;
+    box-shadow: 0 4px 16px 0 rgba(255, 69, 0, 0.13);
+}
 .main_container_banner_food{
     display: flex;
     flex-direction: row;
